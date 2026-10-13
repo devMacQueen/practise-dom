@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="output.css">
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" />
+  <title>open modal</title>
+</head>
+
+<body>
+
+  <!-- <div class="max-w-100 flex">
+   <label for="names">names</label>
+   <select name="names" id="name" class="w-full border-2">
+    <option value="max">Max</option>
+    <option value="colins">colins</option>
+    <option value="mac">Mac</option>
+    <option value="val">Val</option>
+   </select> 
+</div>  -->
+
+
+  <!-- <button data-modal-target="crud-modal" data-modal-toggle="crud-modal" class="text-[#333] bg-white box-border border-gray-300 hover:bg-gray-100  font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none" type="button">
+  + Add Task
+</button> -->
+
+  <!-- Main modal -->
+  <!-- <div i -->
+
+
+
+  <!-- <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script> -->
+
+
+  <script>
+    // const modal = document.getElementById("modal");
+    // const openBtn = document.getElementById("open-btn");
+    // const closeBtn = document.getElementById("form-cancel");
+
+    // function openModal() {
+    //   modal.classList.remove("hidden");
+    //   modal.classList.add("flex");
+    // }
+
+    // function closeModal() {
+    //   modal.classList.add("hidden");
+    //   modal.classList.remove("flex");
+    // }
+
+    // openBtn.addEventListener("click", openModal);
+    // closeBtn.addEventListener("click", closeModal);
+
+
+    // function renderTasK(){
+    // first loop through task in the tasks and give the em the class from our template and append it to our ul
+
+    //     tasks.array.forEach(task => {
+    //         // get our li element
+    //         // get our priorty and pass what the user had register the task with 
+    //     });
+    // }
+
+    // var array = [{
+    //     key: 'one',
+    //     value: 1
+    //     }, {
+    //     key: 'two',
+    //     value: 2
+    //     }, {
+    //     key: 'three',
+    //     value: 3
+    // }];
+
+    // const a = array.reduce(function(obj, current) {
+    //     obj[current.key] = current.value;
+    //     console.log(obj, current.key, current.va
+    //     return obj;
+    // }, []);
+
+    // function Animal(){
+    //     // this.him = "MacQueen"
+    //     this.isalive = true
+    // }
+
+    // Animal.prototype.breathe = function(){
+    //     if (this.isalive) console.log("breathing", this.name)
+    // }
+
+
+    // function Dog(){
+    //     Animal.call(this)
+    //     this.name = "Rex"
+    // }
+
+    // Dog.prototype = Object.create(Animal.prototype)
+    // // Dog.prototype.constructor = Dog
+
+    // Dog.prototype.bark = function(){
+    //     console.log(this.name, "say woof")
+    // }
+
+    // Dog.prototype.breathe = function(){
+    //     Animal.prototype.breathe.call(this)
+    //     console.log("...and panting")
+    // }
+
+    // let dog = new Dog()
+
+    // dog.breathe()
+    // dog.bark()
+    // dog.breathe()
+
+    // console.log(Dog.prototype.constructor === Animal)
+
+
+    // document.addEventListener("DOMContentLoaded", function (e){
+    //     console.log("Am loaded!!!")
+    // });
+
+    // (function(){
+    //     console.log("loaded first");
+    // })();
+
+    // result = (() => {
+    //     return 2 + 2
+    // })();
+
+
+    // setTimeout(() => {
+    //     console.log(result)
+    //     console.log("macqueen")
+    // }, 10000);
+
+
+    // function reminder(todo, time){
+    //     setTimeout(() => {
+    //         alert(`time to ${todo}`)
+    //     }, time)
+    // }
+
+    // reminder("wash", 120000)
+    // console.log("Macqueem")
+
+    // const arr = [1, 2, 3, 4, 5, 6]
+
+    // console.log(arr.find(4))
+
+    // function twosquare(nums){
+    //     let result = 0;
+    //     for (let i = 0; i < nums.length; i++){
+    //         if (i %2 === 0){
+    //             result += nums[i]**2
+    //         } else{
+    //             result -= nums[1]**2
+    //         }
+    //     }
+    //     return result
+    // }
+
+    // console.log(twosquare([1,-1,2,-2,3,-3]))
+
+    // const url =
+    //   'http://api.stackexchange.com/2.2/questions?site=stackoverflow&tagged=javascript';
+    // const questionList = document.createElement('ul');
+    // document.body.appendChild(questionList);
+
+
+    // const responseData = fetch(url).then(response => response.json());
+    // responseData.then(({ items, has_more, quota_max, quota_remaining }) => {
+    //   for (const { title, score, owner, link, answer_count } of items) {
+    //     const listItem = document.createElement('li');
+    //     questionList.appendChild(listItem);
+    //     const a = document.createElement('a');
+    //     listItem.appendChild(a);
+    //     a.href = link;
+    //     a.textContent = `[${score}] ${title} (by ${owner.display_name || 'somebody'})`
+    //   }
+    // });
+
+    // const order = new Promise((resovle, reject) => {
+    //   setTimeout(() => {
+    //     let foodReady = false;
+
+    //     if (foodReady){
+    //       resovle("jollof rice")
+    //     } else{
+    //       reject("food out")
+    //     }
+    //   }, 2000);
+    // })
+
+    // order 
+    //   .then((food) => {
+    //     console.log("food", food)
+    //   })
+    //   .catch((erro) => {
+    //     console.log("problem", erro)
+    //   })
+    //   .finally(() => {
+    //     console.log("Done either way")
+    //   })
+
+    // function square(arra){
+    //   let resul = arra.map((n) => n ** 2).sort((a, b) => b - a)
+    //   let index = resul.length / 2
+    //   let counter = 0
+
+    //   for (let i = 0; i < resul.length; i++){
+    //     if (i < index){
+    //       console.log(i, index)
+    //       counter += resul[i]
+    //       console.log("p", resul[i])
+    //     } else {
+    //       counter -= resul[i]
+    //       console.log("n", resul[i])
+    //     }
+    //   }
+
+    //   return counter
+    // }
+
+    // console.log(square([1,-1,2,-2,3,-3]))
+
+    function scorePare(pare){
+      let depth = 0
+      let score = 0
+
+      for (let i = 0; i < pare.length; i++ ){
+        if (pare[i] === "("){
+          depth++;
+        } else {
+          depth--;
+          if (pare[i-1] === "("){
+            score += 2 ** depth
+          }
+        }
+      }
+      return score
+    }
+
+    console.log(scorePare("((()))"))
+  </script>
+</body>
+
+</html>
+
+<!-- 
+ <div class="col-span-2">
+      <label for="task-due" class="block mb-2 text-sm font-medium text-gray-900">Due Date</label>
+      <input type="date" id="task-due" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required>
+</div>
+
+
+<button data-modal-target="crud-modal" data-modal-toggle="crud-modal" class="rounded-md border border-gray-300 bg-white px-3 py-2 text-sm hover:bg-gray-100" type="button">
+  + Add Task
+</button> -->
